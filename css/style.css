@@ -18,7 +18,7 @@
 }
 
 #calculadora td input:hover {
-  color: #fff;
+  color: #ff1;
   background-color: #546E7A;
 }
 
@@ -30,3 +30,4 @@
   color: #000;
   background-color: #fff;
 }
+

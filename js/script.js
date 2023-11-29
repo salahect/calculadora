@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnResultado = document.getElementById("resultado");
     var btnLimparTela = document.getElementById("limparTela");
     var btnApagarAnterior = document.getElementById("apagarAnterior");
-
+    var btnConvertir = document.getElementById("conver");
+    
     listenerBtn.push(document.getElementById("ponto"));
 
     //teclas dos operadores
@@ -101,6 +102,18 @@ document.addEventListener("DOMContentLoaded", function () {
             default:
                 return false;
         }
+    }
+    btnConvertir.onclick = function(){
+        temperatura();
+        
+    }
+
+    function temperatura (){
+        var celsius = +tela.value;
+        var farenheit = (9/5*celsius) + 32;
+
+        tela.value = farenheit ;
+
     }
 
 });
